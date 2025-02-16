@@ -1,13 +1,12 @@
 import { createApp, ref, defineAsyncComponent } from "./js/vue.esm-browser.prod.js";
-import comboBox from "./components/comboBox.js";
+import dashBoard from "./components/dashBoard/dashBoard.js";
 
 const app = createApp({
-    template: `<combo-box></combo-box>`,
+    components: { dashBoard },
+    template: `<dash-board></dash-board>`,
     data() {
-        return { count: 0 }
     }
 });
 
 app
-    .component('comboBox', comboBox)
-    .mount("#app");
+.mount("#app");

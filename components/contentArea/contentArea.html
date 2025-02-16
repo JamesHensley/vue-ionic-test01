@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="./components/contentArea/contentArea.css">
+<div class="contentArea">
+    <div class="tabsArea">
+        <div class="tab" :class="{ active: curTab == tab.idx }" v-for="tab in allTabs" @click="tabChanged(tab)">{{tab.title}}</div>
+    </div>
+
+    <div class="" v-if="curTab == 0">Tab 1 Contnent Or Component</div>
+    <div class="" v-if="curTab == 1">Tab 2 Contnent Or Component</div>
+    <div class="" v-if="curTab == 2">Tab 3 Contnent Or Component</div>
+</div>
